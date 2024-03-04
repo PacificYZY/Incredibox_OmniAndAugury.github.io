@@ -3789,14 +3789,14 @@ function createGame() {
 }
 
 function creerBoxPicto() {
-    for (var e = [], t = isMobile ? 0 : 56, o = Math.ceil((4 - 2 * t - Math.ceil(68 / 1.5)) / 19), i = t, n = 47, a = 0; a < nbSound; a++) {
+    for (var e = [], t = isMobile ? 0 : 56, o = Math.ceil((-64 - 2 * t - Math.ceil(68 / 1.5)) / 19), i = t, n = 47, a = 0; a < nbSound; a++) {
         isMiniPlayer && appVersion > 4 && (spritePicto = {
             src: ""
         }, i = -9999, n = -9999), $boxPicto.append('<div class="picto" id="picto' + a + '"><div class="scale"><div class="hitzone"></div></div></div>'), $boxPicto.find("#picto" + a + " .scale").css({
             "background-image": "url(" + assetName(spritePicto.src) + ")"
         });
         var s = new PictoObject(a, $boxPicto);
-        s.init(i, n), s.activer(), e.push(s), i += 68 + o, 19 == a && (i = 1330 - (i + 68) + 68 + o, n = 136)
+        s.init(i, n), s.activer(), e.push(s), i += 68 + o, 19 == a && (i = 1398 - (i + 68) + 68 + o, n = 136)
     }
     return e
 }
