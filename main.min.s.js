@@ -3796,7 +3796,7 @@ function creerBoxPicto() {
             "background-image": "url(" + assetName(spritePicto.src) + ")"
         });
         var s = new PictoObject(a, $boxPicto);
-        s.init(i, n), s.activer(), e.push(s), i += 68 + o, 19 == a && (i = 1398 - (i + 68) + 68 + o, n = 136)
+        s.init(i, n), s.activer(), e.push(s), i += 68 + o, 19 == a && (i = 1466 - (i + 68) + 68 + o, n = 136)
     }
     return e
 }
